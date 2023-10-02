@@ -8,6 +8,10 @@
     --dark-primary-2:#2c2b36;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -344,3 +348,113 @@ section .hero-section__title{
     color: black;
     width: 100%;
 }
+
+/* Media Query */
+
+@media only screen and (max-width: 600px) {
+
+    /* header */
+
+    header{
+        flex-direction: column;
+    }
+
+    header>div{
+        margin:10px 0;
+    }
+
+    /* hero section */
+
+    .hero-section{
+        flex-direction: column;
+        padding: 60px 30px;
+    }
+
+    section .hero-section__title{
+        padding: 0px;
+    }
+
+    section .hero-section--img{
+        width: 300px;
+        height: 400px;
+        margin-top: 40px;
+    }
+
+    /* about section */
+
+
+    section .about-section--card{
+        flex-direction: column;
+        padding: 60px 30px;
+    }
+
+    section div > .about-section--card__desc{
+        margin: 0px;
+    }
+
+    section .about-section--card__img > img{
+        width: 300px;
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    /* work section */
+
+    .work-section{
+        padding: 0px;
+    }
+
+    section .work-section--cardholder{
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    section .work-section--card{
+        width: auto;
+        margin: 20px 40px;
+        padding: 40px 20px;
+    }
+
+    /* contact section */
+
+    .contact-section{
+        padding: 30px;
+    }
+
+    .contact-from div> input, textarea{
+        width: 100%;
+    }
+
+    .contact-from{
+        padding: 0px;
+    }
+
+    .contact-section .section-title{
+        padding: 0px;
+        margin: 30px 0px;
+        margin-bottom: 40px;
+    }
+
+    /* button */
+
+    .primary-btn{
+        width: 100%;
+    }
+
+    .hero-btn > button{
+        margin: 10px 0px;
+    }
+
+    .dark-outlined-btn{
+        width: 100%;
+    }
+
+
+
+
+
+
+
+
+
+  }
