@@ -139,6 +139,7 @@ section .hero-section__title{
     line-height: 30px;
     font-size: 18px;
     color: #bdbdbd;
+    padding-right: 60px;
 }
 
 .hero-section__title div > h1{
@@ -370,8 +371,12 @@ section .hero-section__title{
     /* hero section */
 
     .hero-section{
-        flex-direction: column;
+        flex-direction: column; 
         padding: 60px 30px;
+    }
+
+    .hero-section__title div p{
+        padding: 0px;
     }
 
     section .hero-section__title{
